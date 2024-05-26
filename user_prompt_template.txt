@@ -1,0 +1,33 @@
+CONTEXT
+Course Name: {COURSE_NAME}
+Course Description: {COURSE_DESCRIPTION}
+Module: {MODULE_NAME}
+Learning Objective: {LEARNING_OBJECTIVE}
+
+Generate a top quality question, one (1) correct answer, two (2) distractors, and feedback for each of the choices targeting the learning objective.
+
+Remember to ensure the correct answer is not overly long.
+
+EXPECTED OUTPUT
+Only return a valid JSON object with the below structure. Nothing else!
+
+{
+    "question": "<QUESTION_TEXT>",
+    "choices": [
+        {
+            "choice": "<CHOICE_TEXT>",
+            "correct": <TRUE/FALSE>,
+            "feedback": "<FEEDBACK_TEXT>"
+        },
+        {
+            "choice": "<CHOICE_TEXT>",
+            "correct": <TRUE/FALSE>,
+            "feedback": "<FEEDBACK_TEXT>"
+        },
+        {
+            "choice": "<CHOICE_TEXT>",
+            "correct": <TRUE/FALSE>,
+            "feedback": "<FEEDBACK_TEXT>"
+        }
+    ]
+}
